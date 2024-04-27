@@ -48,6 +48,8 @@ Daniel López López</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#BusinessTravel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#LeisureTravel"/>
+        <rdfs:comment>This travel is related to work</rdfs:comment>
+        <rdfs:label>BusinessTravel</rdfs:label>
     </owl:Class>
     
 
@@ -56,6 +58,8 @@ Daniel López López</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#CabinCrew">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Staff"/>
+        <rdfs:comment>Members of the staff other than pilots and that assist passengers</rdfs:comment>
+        <rdfs:label>CabinCrew</rdfs:label>
     </owl:Class>
     
 
@@ -64,6 +68,8 @@ Daniel López López</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Couple">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#LeisureTravel"/>
+        <rdfs:comment>The amount of people that travel together is 2</rdfs:comment>
+        <rdfs:label>Couple</rdfs:label>
     </owl:Class>
     
 
@@ -81,6 +87,8 @@ Daniel López López</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Family">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#LeisureTravel"/>
+        <rdfs:comment>Passengers travel along with family members</rdfs:comment>
+        <rdfs:label>Family</rdfs:label>
     </owl:Class>
     
 
@@ -108,6 +116,8 @@ Daniel López López</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#LeisureTravel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel"/>
+        <rdfs:comment>Travels not related to business and work but Leisure</rdfs:comment>
+        <rdfs:label>LeisureTravel</rdfs:label>
     </owl:Class>
     
 
@@ -136,6 +146,8 @@ Daniel López López</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Pilot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Staff"/>
+        <rdfs:comment>That person from the crew that manages the plain</rdfs:comment>
+        <rdfs:label>Pilot</rdfs:label>
     </owl:Class>
     
 
@@ -173,6 +185,8 @@ Daniel López López</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Solo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#LeisureTravel"/>
+        <rdfs:comment>Passenger travels alone with no other companions</rdfs:comment>
+        <rdfs:label>Solo</rdfs:label>
     </owl:Class>
     
 
@@ -199,7 +213,10 @@ Daniel López López</rdfs:comment>
 
     <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel">
+        <rdfs:comment>The act of travelling between locations</rdfs:comment>
+        <rdfs:label>Travel</rdfs:label>
+    </owl:Class>
     
 
 
