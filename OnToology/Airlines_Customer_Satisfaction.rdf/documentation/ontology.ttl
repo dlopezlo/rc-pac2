@@ -1,0 +1,165 @@
+@prefix : <http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#> .
+
+<http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction> rdf:type owl:Ontology ;
+                                                                                        rdfs:comment """@author:
+Daniel López López""" .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Airline
+:Airline rdf:type owl:Class ;
+         rdfs:comment "The evaluated company that offers flights" ;
+         rdfs:label "Airline" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#BusinessClass
+:BusinessClass rdf:type owl:Class ;
+               rdfs:subClassOf :Seat ;
+               rdfs:comment "Seats from Business Class" ;
+               rdfs:label "BusinessClass" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#BusinessTravel
+:BusinessTravel rdf:type owl:Class ;
+                rdfs:subClassOf :Travel ;
+                owl:disjointWith :LeisureTravel .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#CabinCrew
+:CabinCrew rdf:type owl:Class ;
+           rdfs:subClassOf :Staff .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Couple
+:Couple rdf:type owl:Class ;
+        rdfs:subClassOf :LeisureTravel .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#EconomyClass
+:EconomyClass rdf:type owl:Class ;
+              rdfs:subClassOf :Seat ;
+              rdfs:label "EconomyClass" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Family
+:Family rdf:type owl:Class ;
+        rdfs:subClassOf :LeisureTravel .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#FirstClass
+:FirstClass rdf:type owl:Class ;
+            rdfs:subClassOf :Seat ;
+            rdfs:comment "Seats from first Class" ;
+            rdfs:label "FirstClass" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:comment "A trip between two cities or countries" ;
+        rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#LeisureTravel
+:LeisureTravel rdf:type owl:Class ;
+               rdfs:subClassOf :Travel .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf :Person ;
+           owl:disjointWith :Staff ;
+           rdfs:comment "A person that bought a flight ticket" ;
+           rdfs:label "Passenger" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "A human being related to the flights domains" ;
+        rdfs:label "Person" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Pilot
+:Pilot rdf:type owl:Class ;
+       rdfs:subClassOf :Staff .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Premium
+:Premium rdf:type owl:Class ;
+         rdfs:subClassOf :EconomyClass ;
+         owl:disjointWith :Standard ;
+         rdfs:comment "Enhanced seats from economy class" ;
+         rdfs:label "Premium" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Review
+:Review rdf:type owl:Class ;
+        rdfs:comment "The evaluation of an Airline and flight made by a passenger" ;
+        rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Seat
+:Seat rdf:type owl:Class ;
+      rdfs:comment "The seat and place booked inside a plan" ;
+      rdfs:label "Seat" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Solo
+:Solo rdf:type owl:Class ;
+      rdfs:subClassOf :LeisureTravel .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Staff
+:Staff rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:comment "A person that works in a Airline company" ;
+       rdfs:label "Staff" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Standard
+:Standard rdf:type owl:Class ;
+          rdfs:subClassOf :EconomyClass ;
+          rdfs:comment "Regular class in economy" ;
+          rdfs:label "Standard" .
+
+
+###  http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel
+:Travel rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BusinessClass
+                :EconomyClass
+                :FirstClass
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CabinCrew
+                :Passenger
+                :Pilot
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Couple
+                :Family
+                :Solo
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
