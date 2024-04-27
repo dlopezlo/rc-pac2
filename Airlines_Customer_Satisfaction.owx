@@ -171,6 +171,11 @@ Daniel López López</Literal>
         <Literal>Airline</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessClass</IRI>
+        <Literal>Seats from Business Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#BusinessClass</IRI>
         <Literal>BusinessClass</Literal>
@@ -179,6 +184,11 @@ Daniel López López</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EconomyClass</IRI>
         <Literal>EconomyClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FirstClass</IRI>
+        <Literal>Seats from first Class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -217,6 +227,16 @@ Daniel López López</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Premium</IRI>
+        <Literal>Enhanced seats from economy class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Premium</IRI>
+        <Literal>Premium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Review</IRI>
         <Literal>The evaluation of an Airline and flight made by a passenger</Literal>
     </AnnotationAssertion>
@@ -244,6 +264,16 @@ Daniel López López</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Staff</IRI>
         <Literal>Staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Standard</IRI>
+        <Literal>Regular class in economy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Standard</IRI>
+        <Literal>Standard</Literal>
     </AnnotationAssertion>
 </Ontology>
 
