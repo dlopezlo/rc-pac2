@@ -1,0 +1,70 @@
+{
+  "@context" : {
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Review"
+    },
+    "Couple" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Couple"
+    },
+    "Travel" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel"
+    },
+    "LeisureTravel" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#LeisureTravel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CabinCrew" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#CabinCrew"
+    },
+    "Solo" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Solo"
+    },
+    "FirstClass" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#FirstClass"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Person"
+    },
+    "Premium" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Premium"
+    },
+    "Pilot" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Pilot"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"
+    },
+    "Family" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Family"
+    },
+    "Seat" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Seat"
+    },
+    "Standard" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Standard"
+    },
+    "Staff" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Staff"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Airline"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight"
+    },
+    "EconomyClass" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#EconomyClass"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "BusinessTravel" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#BusinessTravel"
+    },
+    "BusinessClass" : {
+      "@id" : "http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#BusinessClass"
+    }
+  }
+}
