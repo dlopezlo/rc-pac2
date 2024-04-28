@@ -49,6 +49,8 @@ Daniel López López</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#TravelChosenByPassenger">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#personTypeOfTravel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Travel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
         <rdfs:comment>Relates a type of travel with a person</rdfs:comment>
         <rdfs:label>TravelChosenByPassenger</rdfs:label>
     </owl:ObjectProperty>
@@ -754,7 +756,7 @@ Daniel López López</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#QatarAirways">
         <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Airline"/>
         <Airlines_Customer_Satisfaction:hasAirlineId>QR</Airlines_Customer_Satisfaction:hasAirlineId>
-        <Airlines_Customer_Satisfaction:hasAirlineName>Qatar Airways</Airlines_Customer_Satisfaction:hasAirlineName>
+        <Airlines_Customer_Satisfaction:hasAirlineName>QatarAirways</Airlines_Customer_Satisfaction:hasAirlineName>
     </owl:NamedIndividual>
     
 
