@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Airlines_Customer_Satisfaction="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction">
         <rdfs:comment>@author:
 Daniel López López</rdfs:comment>
@@ -41,6 +42,16 @@ Daniel López López</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#TravelChosenByPassenger -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#TravelChosenByPassenger">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#personTypeOfTravel"/>
+        <rdfs:comment>Relates a type of travel with a person</rdfs:comment>
+        <rdfs:label>TravelChosenByPassenger</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -713,13 +724,119 @@ Daniel López López</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#QR1001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#QR1001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight"/>
+        <Airlines_Customer_Satisfaction:flightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-04-12T13:20:00</Airlines_Customer_Satisfaction:flightDate>
+        <Airlines_Customer_Satisfaction:hasDestination>Barcelona</Airlines_Customer_Satisfaction:hasDestination>
+        <Airlines_Customer_Satisfaction:hasFlightID>QR1001</Airlines_Customer_Satisfaction:hasFlightID>
+        <Airlines_Customer_Satisfaction:hasOrigin>Madrid</Airlines_Customer_Satisfaction:hasOrigin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#QR2001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#QR2001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight"/>
+        <Airlines_Customer_Satisfaction:flightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-04-12T13:20:00</Airlines_Customer_Satisfaction:flightDate>
+        <Airlines_Customer_Satisfaction:hasCommutes>Paris</Airlines_Customer_Satisfaction:hasCommutes>
+        <Airlines_Customer_Satisfaction:hasDestination>New York</Airlines_Customer_Satisfaction:hasDestination>
+        <Airlines_Customer_Satisfaction:hasFlightID>QR2001</Airlines_Customer_Satisfaction:hasFlightID>
+        <Airlines_Customer_Satisfaction:hasOrigin>Dubai</Airlines_Customer_Satisfaction:hasOrigin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#QatarAirways -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#QatarAirways">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Airline"/>
+        <Airlines_Customer_Satisfaction:hasAirlineId>QR</Airlines_Customer_Satisfaction:hasAirlineId>
+        <Airlines_Customer_Satisfaction:hasAirlineName>Qatar Airways</Airlines_Customer_Satisfaction:hasAirlineName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#RYR1001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#RYR1001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight"/>
+        <Airlines_Customer_Satisfaction:flightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-04-13T13:20:00</Airlines_Customer_Satisfaction:flightDate>
+        <Airlines_Customer_Satisfaction:hasDestination>Paris</Airlines_Customer_Satisfaction:hasDestination>
+        <Airlines_Customer_Satisfaction:hasFlightID>RYR1001</Airlines_Customer_Satisfaction:hasFlightID>
+        <Airlines_Customer_Satisfaction:hasOrigin>Cork</Airlines_Customer_Satisfaction:hasOrigin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#RYR2001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#RYR2001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight"/>
+        <Airlines_Customer_Satisfaction:flightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-04-14T13:20:00</Airlines_Customer_Satisfaction:flightDate>
+        <Airlines_Customer_Satisfaction:hasCommutes>Madrid</Airlines_Customer_Satisfaction:hasCommutes>
+        <Airlines_Customer_Satisfaction:hasDestination>Casablanca</Airlines_Customer_Satisfaction:hasDestination>
+        <Airlines_Customer_Satisfaction:hasFlightID>RYR2001</Airlines_Customer_Satisfaction:hasFlightID>
+        <Airlines_Customer_Satisfaction:hasOrigin>Dublin</Airlines_Customer_Satisfaction:hasOrigin>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Ryanair -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Ryanair">
         <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Airline"/>
+        <Airlines_Customer_Satisfaction:hasAirlineId>RYR</Airlines_Customer_Satisfaction:hasAirlineId>
+        <Airlines_Customer_Satisfaction:hasAirlineName>Ryanair</Airlines_Customer_Satisfaction:hasAirlineName>
         <rdfs:comment>Ryanair Airlines</rdfs:comment>
         <rdfs:label>Ryanair</rdfs:label>
         <rdfs:sameAs>https://dbpedia.org/page/Ryanair</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasName>Robert Walters</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>US32322334234342</Airlines_Customer_Satisfaction:hasPID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasName>Beth Mulligan</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>IR23238898972</Airlines_Customer_Satisfaction:hasPID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasName>Lili Ming</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>CH239785334234</Airlines_Customer_Satisfaction:hasPID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pass0004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasName>Muhamad Ben Jaffar</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>QA98837236324674</Airlines_Customer_Satisfaction:hasPID>
     </owl:NamedIndividual>
     
 
