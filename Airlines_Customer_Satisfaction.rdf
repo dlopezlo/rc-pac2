@@ -44,6 +44,7 @@ Daniel López López</rdfs:comment>
     <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#buysSeat -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#buysSeat">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#seatBelongsTo"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Seat"/>
         <rdfs:comment>Every Passenger has a Seat</rdfs:comment>
