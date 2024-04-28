@@ -44,6 +44,28 @@ Daniel López López</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#aFlightIsReviewed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#aFlightIsReviewed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Review"/>
+        <rdfs:comment>A flight has reviews</rdfs:comment>
+        <rdfs:label>aFlightIsReviewed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#aReviewsForaFlight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#aReviewsForaFlight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Flight"/>
+        <rdfs:comment>a review evaluates a Flight</rdfs:comment>
+        <rdfs:label>aReviewForaFlight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#buysSeat -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#buysSeat">
