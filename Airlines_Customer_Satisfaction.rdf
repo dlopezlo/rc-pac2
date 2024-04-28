@@ -9,6 +9,9 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction">
         <rdfs:comment>@author:
 Daniel López López</rdfs:comment>
+        <rdfs:comment>Ontology created during the subject &quot;Representació del Coneixement&quot; at Universitat Oberta de Catalunya</rdfs:comment>
+        <rdfs:label>Airlines_Customer_Satisfaction</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -108,6 +111,29 @@ Daniel López López</rdfs:comment>
         <rdfs:range rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Airline"/>
         <rdfs:comment>Each flight belongs to a airline company</rdfs:comment>
         <rdfs:label>flightOperatedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#reviewIsCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#reviewIsCreatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#reviewsFlight"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
+        <rdfs:comment>A review is made by a Passenger</rdfs:comment>
+        <rdfs:label>reviewIsCreatedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#reviewsFlight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#reviewsFlight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Review"/>
+        <rdfs:comment>A clients can review the Flight that bought</rdfs:comment>
+        <rdfs:label>reviewsFlight</rdfs:label>
     </owl:ObjectProperty>
     
 
