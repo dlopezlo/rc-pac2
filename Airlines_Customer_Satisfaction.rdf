@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction/"
      xml:base="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,6 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:Airlines_Customer_Satisfaction="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction">
+        <dc:rights>http://cor.esipfed.org/ont/CCL_0000001</dc:rights>
+        <dc:title>Airlines Customer Satisfaction</dc:title>
         <rdfs:comment>@author:
 Daniel López López</rdfs:comment>
         <rdfs:comment>Ontology created during the subject &quot;Representació del Coneixement&quot; at Universitat Oberta de Catalunya</rdfs:comment>
@@ -25,6 +28,18 @@ Daniel López López</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -839,6 +854,58 @@ Daniel López López</rdfs:comment>
         <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72</Airlines_Customer_Satisfaction:hasAge>
         <Airlines_Customer_Satisfaction:hasName>Muhamad Ben Jaffar</Airlines_Customer_Satisfaction:hasName>
         <Airlines_Customer_Satisfaction:hasPID>QA98837236324674</Airlines_Customer_Satisfaction:hasPID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Pilot"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasFlightLicense>PL12121212</Airlines_Customer_Satisfaction:hasFlightLicense>
+        <Airlines_Customer_Satisfaction:hasName>Miquel Pons</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>CAT2372332</Airlines_Customer_Satisfaction:hasPID>
+        <Airlines_Customer_Satisfaction:hasWorkerId>QA12121</Airlines_Customer_Satisfaction:hasWorkerId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Pilot"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasFlightLicense>PL323132</Airlines_Customer_Satisfaction:hasFlightLicense>
+        <Airlines_Customer_Satisfaction:hasName>Marta Schulz</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>DE78328723</Airlines_Customer_Satisfaction:hasPID>
+        <Airlines_Customer_Satisfaction:hasWorkerId>QA54545</Airlines_Customer_Satisfaction:hasWorkerId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Pilot"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasFlightLicense>PL7838672832</Airlines_Customer_Satisfaction:hasFlightLicense>
+        <Airlines_Customer_Satisfaction:hasName>Joon Li Qwong</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>KR2323223</Airlines_Customer_Satisfaction:hasPID>
+        <Airlines_Customer_Satisfaction:hasWorkerId>RYR23323</Airlines_Customer_Satisfaction:hasWorkerId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#pil0004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dlopezlo/ontologies/2024/3/Airlines_Customer_Satisfaction#Pilot"/>
+        <Airlines_Customer_Satisfaction:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47</Airlines_Customer_Satisfaction:hasAge>
+        <Airlines_Customer_Satisfaction:hasFlightLicense>PL39982382</Airlines_Customer_Satisfaction:hasFlightLicense>
+        <Airlines_Customer_Satisfaction:hasName>Luke S. Walker</Airlines_Customer_Satisfaction:hasName>
+        <Airlines_Customer_Satisfaction:hasPID>GAL23232324</Airlines_Customer_Satisfaction:hasPID>
+        <Airlines_Customer_Satisfaction:hasWorkerId>RYR66313</Airlines_Customer_Satisfaction:hasWorkerId>
     </owl:NamedIndividual>
     
 
